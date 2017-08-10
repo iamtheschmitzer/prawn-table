@@ -18,6 +18,8 @@ module Prawn
 
         def initialize(pdf, point, options={})
           options[:padding] ||= [0, 0, 0, 0]
+          options[:borders] = []
+          options[:border_widths] = [0] * 4
 
           super
 
